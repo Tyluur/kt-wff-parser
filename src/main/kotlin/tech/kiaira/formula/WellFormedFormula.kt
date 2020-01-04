@@ -13,6 +13,10 @@ class WellFormedFormula(var text: String) {
      */
     val segments: ProperInitialSegment = ProperInitialSegment(this)
 
+    /**
+     * The construction sequence of this formula
+     */
+    var sequence = ConstructionSequence(this)
 
     /**
      * The first invalid character in the sequence
@@ -20,19 +24,9 @@ class WellFormedFormula(var text: String) {
     val invalidCharacter = verifyInput()
 
     /**
-     * The construction sequence of this formula
-     */
-    var constructionSequence: ConstructionSequence? = null
-
-    /**
-     * Whether the sequence is valid or not
-     */
-    var validSequence: Boolean
-
-    /**
      * Information about where the invalid segment occurred
      */
-    var invalidSegmentInfo : String? = null
+    var invalidSegmentInfo: String? = null
 
     /**
      * Verifying that the input of this well formed formula is acceptable
@@ -49,26 +43,25 @@ class WellFormedFormula(var text: String) {
         return null
     }
 
-    init {
-        validSequence = invalidCharacter == null
-        if (validSequence) {
-            constructionSequence = ConstructionSequence(this)
-            constructionSequence!!.loadSequence()
-        }
-    }
-
     /**
      * This function verifies whether this formula satisfies all properties.
      * @return Int
      * The integer -1 is returned if all properties from {@link WFFProperty} are satisfied
      */
-    public fun satisfiesProperties(): WFFProperty? {
+    fun satisfiesProperties(): WFFProperty? {
         for (property in WFFProperty.values()) {
             if (!property.isSatisfied(this)) {
                 return property
             }
         }
         return null
+    }
+
+    /**
+     * If this formula is an atomic formula
+     */
+    fun isAtomic(): Boolean {
+        return text.toCharArray().size == 1
     }
 
 }

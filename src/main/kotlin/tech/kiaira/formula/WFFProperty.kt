@@ -11,15 +11,12 @@ enum class WFFProperty {
     /** Every WFF is either atomic (an element of the core set) or starts with the left bracket symbol '(' */
     ATOMIC_OR_BRACKET_START {
         override fun isSatisfied(formula: WellFormedFormula): Boolean {
-            val chars = formula.text.chars()
-            // atomic
-            val toArray = chars.toArray()
-            // input is length of 1, it can only be a variable, no connectives allowed
-            if (toArray.size == 1) {
-                val firstChar = toArray[0].toChar()
+            val charArray = formula.text.toCharArray()
+            if (formula.isAtomic()) {
+                val firstChar = charArray[0]
                 return (firstChar in 'a'..'z') || (firstChar in 'A'..'Z')
             } else {
-                val firstChar = toArray[0].toChar()
+                val firstChar = charArray[0]
                 if (firstChar != '(')
                     return false
             }
@@ -51,5 +48,5 @@ enum class WFFProperty {
         }
     };
 
-    abstract fun isSatisfied(formula: WellFormedFormula): Boolean;
+    abstract fun isSatisfied(formula: WellFormedFormula): Boolean
 }
