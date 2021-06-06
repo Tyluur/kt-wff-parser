@@ -1,7 +1,7 @@
-package tech.kiaira.formula
+package com.tyluur.formula
 
 /**
- * @author Tyluur <contact@kiaira.tech>
+ * @author Tyluur <contact@tyluur.com>
  * @since 2019-12-16
  */
 class ConstructionSequence(private val formula: WellFormedFormula) {

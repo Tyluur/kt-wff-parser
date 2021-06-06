@@ -1,4 +1,4 @@
-package tech.kiaira.formula.operations
+package com.tyluur.formula.operations
 
 /**
  * This class denotes a formula operation

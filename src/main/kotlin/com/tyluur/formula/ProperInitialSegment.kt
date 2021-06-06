@@ -1,9 +1,9 @@
-package tech.kiaira.formula
+package com.tyluur.formula
 
 import java.lang.StringBuilder
 
 /**
- * @author Tyluur <contact@kiaira.tech>
+ * @author Tyluur <contact@tyluur.com>
  * @since 2019-12-16
  */
 class ProperInitialSegment(private val formula: WellFormedFormula) {

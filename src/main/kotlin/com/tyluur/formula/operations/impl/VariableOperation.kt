@@ -1,9 +1,9 @@
-package tech.kiaira.formula.operations.impl
+package com.tyluur.formula.operations.impl
 
-import tech.kiaira.formula.operations.FormulaOperation
+import com.tyluur.formula.operations.FormulaOperation
 
 /**
- * @author Tyluur <contact@kiaira.tech>
+ * @author Tyluur <contact@tyluur.com>
  * @since 2020-01-02
  */
 class VariableOperation(contents: String,

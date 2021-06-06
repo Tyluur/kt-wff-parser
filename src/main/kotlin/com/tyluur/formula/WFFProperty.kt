@@ -1,9 +1,9 @@
-package tech.kiaira.formula
+package com.tyluur.formula
 
-import tech.kiaira.util.bracketCount
+import com.tyluur.util.bracketCount
 
 /**
- * @author Tyluur <contact@kiaira.tech>
+ * @author Tyluur <contact@tyluur.com>
  * @since 2019-12-16
  */
 enum class WFFProperty {

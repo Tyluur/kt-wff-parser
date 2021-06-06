@@ -1,6 +1,6 @@
-package tech.kiaira.formula
+package com.tyluur.formula
 
-import tech.kiaira.formula.WFFData.Companion.CONNECTIVES
+import com.tyluur.formula.WFFData.Companion.CONNECTIVES
 
 /**
  * This method verifies that the character is alphabetical

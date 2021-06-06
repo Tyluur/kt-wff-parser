@@ -1,9 +1,9 @@
-package tech.kiaira.formula
+package com.tyluur.formula
 
-import tech.kiaira.formula.WFFProperty
+import com.tyluur.formula.WFFProperty
 
 /**
- * @author Tyluur <contact@kiaira.tech>
+ * @author Tyluur <contact@tyluur.com>
  * @since 2019-12-16
  */
 class WellFormedFormula(var text: String) {

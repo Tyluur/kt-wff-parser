@@ -40,6 +40,6 @@ This project is available under the terms of the GNU license. See the LICENSE fi
 
 # Contact
 
-You can contact me at contact@kiaira.tech 
+You can contact me at contact@tyluur.com
 
 [Wikipedia]: http://www.skillfulreasoning.com/propositional_logic/well-formed_formulas.html

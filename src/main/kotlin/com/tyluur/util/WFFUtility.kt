@@ -1,4 +1,4 @@
-package tech.kiaira.util
+package com.tyluur.util
 
 /**
  * This function counts the amount of brackets in a string, whether left or right

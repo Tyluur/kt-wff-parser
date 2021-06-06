@@ -1,12 +1,12 @@
-package tech.kiaira.formula
+package com.tyluur.formula
 
-import tech.kiaira.formula.operations.FormulaOperation
-import tech.kiaira.formula.operations.impl.ConnectiveOperation
-import tech.kiaira.formula.operations.impl.NotOperation
+import com.tyluur.formula.operations.FormulaOperation
+import com.tyluur.formula.operations.impl.ConnectiveOperation
+import com.tyluur.formula.operations.impl.NotOperation
 import kotlin.reflect.KClass
 
 /**
- * @author Tyluur <contact@kiaira.tech>
+ * @author Tyluur <contact@tyluur.com>
  * @since 2019-12-16
  */
 class WFFData {

@@ -1,7 +1,7 @@
-package tech.kiaira
+package com.tyluur
 
-import tech.kiaira.formula.WellFormedFormula
-import tech.kiaira.formula.replaceWFFAlphabet
+import com.tyluur.formula.WellFormedFormula
+import com.tyluur.formula.replaceWFFAlphabet
 import java.lang.Exception
 import java.util.*
 import kotlin.system.exitProcess
@@ -43,7 +43,7 @@ fun main() {
             println("\tProper Initial Segments:\t${formula.segments.getPrettySegments()}")
             println("\tConstruction Sequence:\t${formula.sequence.set}\n")
         } catch (e: Exception) {
-            System.err.println("There was an error in this calculation, please verify your input is correct.\nContact the developer over mail at contact@kiaira.tech in the case of a bug")
+            System.err.println("There was an error in this calculation, please verify your input is correct.\nContact the developer over mail at contact@tyluur.com in the case of a bug")
             e.printStackTrace()
             break
         }
