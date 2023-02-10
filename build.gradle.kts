@@ -1,8 +1,8 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
+    application
     kotlin("jvm") version "1.8.0"
-    kotlin("plugin.serialization") version "1.7.20"
 }
 
 group = "com.tyluur"
@@ -10,6 +10,10 @@ version = "1.0-SNAPSHOT"
 
 java.sourceCompatibility = JavaVersion.toVersion('8')
 java.targetCompatibility = JavaVersion.toVersion('8')
+
+application {
+    mainClass.set("com.tyluur.Executor")
+}
 
 repositories {
     mavenCentral()
