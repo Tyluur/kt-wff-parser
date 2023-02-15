@@ -3,7 +3,7 @@ package com.tyluur.formula
 import java.lang.StringBuilder
 
 /**
- * @author Tyluur <contact@tyluur.com>
+ * @author Tyluur <itstyluur@icloud.com>
  * @since 2019-12-16
  */
 class ProperInitialSegment(private val formula: WellFormedFormula) {
@@ -36,14 +36,13 @@ class ProperInitialSegment(private val formula: WellFormedFormula) {
     /**
      * Printing all the initial segments
      */
-    fun getPrettySegments() : String {
+    fun getPrettySegments(): String {
         val bldr = StringBuilder()
         for ((index, it) in list.withIndex()) {
             bldr.append(it + (if (index == list.lastIndex) "" else ", "))
         }
         return "[${bldr.toString()}]"
     }
-
 
 
 }

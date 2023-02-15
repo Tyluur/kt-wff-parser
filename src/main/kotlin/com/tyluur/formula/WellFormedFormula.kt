@@ -3,7 +3,7 @@ package com.tyluur.formula
 import com.tyluur.formula.WFFProperty
 
 /**
- * @author Tyluur <contact@tyluur.com>
+ * @author Tyluur <itstyluur@icloud.com>
  * @since 2019-12-16
  */
 class WellFormedFormula(var text: String) {

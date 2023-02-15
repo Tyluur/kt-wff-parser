@@ -79,7 +79,7 @@ class Executor {
 
         @Throws(Exception::class)
         @JvmStatic
-        fun main(args : Array<String>) {
+        fun main(args: Array<String>) {
             Executor().launch()
         }
 

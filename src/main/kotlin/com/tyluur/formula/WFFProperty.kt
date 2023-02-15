@@ -3,7 +3,7 @@ package com.tyluur.formula
 import com.tyluur.util.bracketCount
 
 /**
- * @author Tyluur <contact@tyluur.com>
+ * @author Tyluur <itstyluur@icloud.com>
  * @since 2019-12-16
  */
 enum class WFFProperty {
