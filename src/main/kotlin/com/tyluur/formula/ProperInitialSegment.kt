@@ -3,7 +3,7 @@ package com.tyluur.formula
 import java.lang.StringBuilder
 
 /**
- * @author Tyluur <contact@tyluur.com>
+ * @author Tyluur <itstyluur@icloud.com>
  * @since 2019-12-16
  */
 class ProperInitialSegment(private val formula: WellFormedFormula) {

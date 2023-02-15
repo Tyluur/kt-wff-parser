@@ -1,7 +1,7 @@
 package com.tyluur.formula
 
 /**
- * @author Tyluur <contact@tyluur.com>
+ * @author Tyluur <itstyluur@icloud.com>
  * @since 2019-12-16
  */
 class ConstructionSequence(private val formula: WellFormedFormula) {

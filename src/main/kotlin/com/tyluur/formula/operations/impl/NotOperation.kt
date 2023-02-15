@@ -4,7 +4,7 @@ import com.tyluur.formula.WFFData
 import com.tyluur.formula.operations.FormulaOperation
 
 /**
- * @author Tyluur <contact@tyluur.com>
+ * @author Tyluur <itstyluur@icloud.com>
  * @since 2020-01-02
  */
 class NotOperation(contents: String,

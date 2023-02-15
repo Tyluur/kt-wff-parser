@@ -1,8 +1,8 @@
 package com.tyluur.formula
 
-import com.tyluur.formula.WFFData.Companion.CONNECTIVES
-
 /**
+ * @author Tyluur <itstyluur@icloud.com>
+ *
  * This method verifies that the character is alphabetical
  * @return Boolean True if valid, false if not
  */
