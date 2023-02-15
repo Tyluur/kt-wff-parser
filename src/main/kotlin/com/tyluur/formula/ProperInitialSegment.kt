@@ -36,14 +36,13 @@ class ProperInitialSegment(private val formula: WellFormedFormula) {
     /**
      * Printing all the initial segments
      */
-    fun getPrettySegments() : String {
+    fun getPrettySegments(): String {
         val bldr = StringBuilder()
         for ((index, it) in list.withIndex()) {
             bldr.append(it + (if (index == list.lastIndex) "" else ", "))
         }
         return "[${bldr.toString()}]"
     }
-
 
 
 }
